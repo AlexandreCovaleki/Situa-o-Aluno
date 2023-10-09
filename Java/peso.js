@@ -9,6 +9,7 @@ form.addEventListener("submit", (e) => {
     const nome = form.inNome.valune
     const masculino = form.inMasculino.checked
     const altura = Number(form.inAltura.value)
+    alert(nome + altura)
 
     //calculando o peso ideal
     let peso
@@ -18,8 +19,8 @@ form.addEventListener("submit", (e) => {
        peso = 21 * Math.pow(altura, 2)
     }
     //apresenta resposta
-    resp.innerText = ${nome}seu peso ideal é:${peso.toFixed(3)}kg
-    })
+    resp.innerText = `${nome} seu peso ideal é: ${peso.toFixed(3)}kg`
+   })
 
     //segundo ouvinte. limpa o conteúdo de h3
 
