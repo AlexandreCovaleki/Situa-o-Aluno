@@ -6,10 +6,9 @@ const resp = document.querySelector("h3")
 form.addEventListener("submit", (e) => {
     e.preventDefault()
 
-    const nome = form.inNome.valune
+    const nome = form.inNome.value
     const masculino = form.inMasculino.checked
     const altura = Number(form.inAltura.value)
-    alert(nome + altura)
 
     //calculando o peso ideal
     let peso
