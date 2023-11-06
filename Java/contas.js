@@ -12,5 +12,15 @@ removeEventListener.addEventListener("submit", (e) => {
     const descricao = frm.inDescrição.value
     const valor = Numbe(rm.inValor.value)
 
-    numContas
+    numContas++
+    ValTotal = ValTotal + valor
+
+    resposta = resposta + descricao + " - R$ " + valor.toFixed(2) + "\n"
+
+    resp1.innerText = `${resposta}-----------------------------`
+    resp2.innerText = `${numContas} Conta(s) - Total R$: ${ValTotal.toFixed(2)}`
+
+    frm.inDescricao.value = ""
+    frm.InValor.value = ""
+    frm.inDescricao.focus()
 })
